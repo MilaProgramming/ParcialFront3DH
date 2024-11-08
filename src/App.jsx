@@ -47,7 +47,7 @@ function App() {
         <h2>Registro de Usuario</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label>Nombre</label>
+            <label>Nombre* (mayor a 3 caracteres)</label>
             <input
               type="text"
               name="name"
@@ -67,7 +67,7 @@ function App() {
             {formErrors.email && <span className="error">{formErrors.email}</span>}
           </div>
           <div className="form-group">
-            <label>Contraseña</label>
+            <label>Contraseña* (mayor a 6 caracteres)</label>
             <input
               type="password"
               name="password"
